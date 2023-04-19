@@ -13,6 +13,9 @@ spring:
     driver-class-name: org.h2.Driver
     hikari:
       jdbc-url: jdbc:h2:mem:testdb
+#      username: abcd
+#      password: "abcd1234"
+
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -25,3 +28,21 @@ spring:
     show-sql: true
     data: classpath:data.sql
     initialization-mode: always
+
+    server:
+      port=9091:
+jwt :
+  secret: dfqwi256df75as@dfkhqfefhskjbj&37xc!@#dfkfslsdd57813sa
+  refresh: dfqwi256df75as@dfkhqfefhskjbj&37xc!@#dfkfslsdd57813sa
+
+
+
+
+
+
+
+
+
+
+
+

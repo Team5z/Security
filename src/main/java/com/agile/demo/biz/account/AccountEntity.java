@@ -3,10 +3,14 @@ package com.agile.demo.biz.account;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.Date;
+import java.util.stream.Collectors;
 import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.Table;
