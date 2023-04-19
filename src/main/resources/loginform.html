@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html
+        lang="ko"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+<head>
+  <meta charset="UTF-8" />
+  <title>로그인 테스트</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+<div>
+  <h2>로그인</h2>
+</div>
+
+<div>
+  <p th:if="${loginError}" class="error">
+    이메일 혹은 비밀번호가 맞지 않습니다.
+  </p>
+  <form th:action="@{/login-process}" method="post">
+    <label for="email">email</label>:
+    <input
+            type="text"
+            id="email"
+            name="email"
+            autofocus="autofocus"
+            value="test6"
+    />
+    <br />
+    <label for="password">Password</label>:
+    <input type="password" id="password" name="password" value="1234" />
+    <br />
+    <input type="submit" value="Log in" />
+  </form>
+</div>
+</body>
+</html>
